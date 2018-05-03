@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>İlk İnşaat</title>
+
+	<!-- CSS -->
+	<!-- Bootstrap core CSS -->
+	<link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+	<!-- Font Awesome CSS -->
+	<link href="static/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen">
+
+	<!-- Flaticons CSS -->
+	<link href="static/fonts/flaticon/flaticon.css" rel="stylesheet" media="screen">
+
+
+
+	<!-- Magnific-popup lightbox -->
+	<link href="static/css/magnific-popup.css" rel="stylesheet">
+
+	<!-- Animate css -->
+	<link href="static/css/animate.css" rel="stylesheet">
+
+	<!-- Custom styles CSS -->
+	<link href="static/css/style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="preloader-status">
+			<div class="preloader-class"></div>
+		</div>
+	</div>
+
+	<!-- Home start -->
+
+	<section id="anasayfa" class="section-image js-height-full">
+			
+		<div id="Carousel" class="carousel slide" data-interval="4500" data-ride="carousel">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<!-- <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li> -->
+			</ol>   
+			<!-- Carousel items -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="static/images/slider1.jpg" alt="First Slide">
+					<!-- <div class="carousel-caption">
+						<h3>First slide label</h3>
+						<p>Lorem ipsum dolor sit amet...</p>
+					</div> -->
+				</div>
+				<div class="item">
+					<img src="static/images/slider2.jpeg" alt="Second Slide">
+					<!-- <div class="carousel-caption">
+						<h3>Second slide label</h3>
+						<p>Aliquam sit amet gravida nibh, facilisis...</p>
+					</div> -->
+				</div>
+				<div class="item">
+					<img src="static/images/slider3.jpg" alt="Third Slide">
+					<!-- <div class="carousel-caption">
+						<h3>Third slide label</h3>
+						<p>Praesent commodo cursus magna vel...</p>
+					</div> -->
+				</div>
+			</div>
+			<!-- Carousel nav -->
+			<!-- <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="carousel-control right" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a> -->
+		</div>		
+
+		<div class="intro">
+			<div class="hello">Geçmisi yeniler, gelecegi insa eder.</div>
+			<h1>İlk İnşaat</h1>
+		</div>
+	
+		<div class="mouse-icon">
+			<div class="wheel"></div>
+		</div>
+	
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">İlk İnşaat</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#anasayfa">ANASAYFA</a></li>
+						<li><a href="#biz">BİZ</a></li>
+						<li><a href="#firmalar">HİZMETLER</a></li>
+
+						<li><a href="#referanslar">REFERANSLAR</a></li>
+						<li><a href="#brosurler">BROŞÜR</a></li>
+						<!-- <li><a href="#skills">Skills</a></li> -->
+
+						<li><a href="#iletisim">İLETİŞİM</a></li>
+						<li><a href="/en"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHqSURBVDhP3VPfT9NQFL7/KIn6ruHFNxMMJD7wQ5fA1Bm2oUFYdLNCDAiGuAUH1bGhkMXSrF03h0WQttu6jW3dPnvuXEUy4otPnORLbs7p/XrP953DrnAM+5On8xv5E58gfb82ua2cx03/Tl4Ir1oEOl+s357dLbx8Hjfv3hMsthwQKnoshq7jIPejhUC8golViyP8oQpldJSDzv381FsLiT0LWjCEYjCIyDvZYHeefikpiRTksTHYBwdoOV0kpAb/eBDRglhFcSsD2c3ZsoxGq4uJ6FedXb8vapPupbVdE/nQHAqBAJx6HScVByt7NY+ICD5Lp8hPT+MwEuEdZA9b8G+UQRxs+HH627NkFYQXn2zIGQWqz4dGqQSKPlFVK3r5cr2D9Wyd3yEQB1sOr1RyIyO4DPtDQxyDan0Qx/8jOt9a3BW51uzw51MbhlrwWtMth7dqiiLUmRlkpWNXN/tPayTUE9fy3HGbC0hCqq6g4v5PzG/97dqrdA2Wq8+ZriM3Pg4ttoSltN0T+4EgHbVdy8lKslTZTCO82bN6kP2+9TI+KmfodHuvozuLi0mD0TDRUKmzIaxlTG/oLiPyau7PSkYbnWYT0dcpk9F4RxfeG7ceprSLK/CvFbkxta08eiMf0Zr93rirF4z9ArbVoWR2fryyAAAAAElFTkSuQmCC"></a></li>
+					</ul>				
+                        </div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+
+
+	<!-- About start -->
+
+	<section id="biz"  class="section section-about">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="section-header wow fadeInUp">
+						<h2 class="section-title">BİZ</h2>
+						<div class="section-line"></div>
+						<div class="section-subtitle">Vizyonumuz faaliyet gösterdigimiz bütün alanlarda; yurt ici ve dısındaki müsterilerine yenilikci, kaliteli hizmet ve cözümler sunmak, misyonumuz küresel hedeflerine marka bilinirligini artırarak ulasan, halkına gurur veren bir sirketi olmak.
+</div>
+						<div class="section-space"></div>
+
+					</div>
+
+				</div>
+
+			</div>
+				<div class="row">
+
+					<div class="col-sm-6">
+						<div class="section-text wow bounceIn">
+								<p class="dropcap">İlk insaat 1995 yılında Mehmet Veysi Karasu tarafından kuruldu ve özel tekniklerin kullanılmasını gerektiren veya nispeten daha zor olan, karmaşık tasarım ve mühendislik çalışmalarının yapıldığı ve risklerin bulunduğu projelere odaklanma felsefesiyle dikkat çekmiş ve önce güven ilkesiyle iş ortaklarına daha iyi bir hizmet vermek için sürekli değişim felsefesini benimsemiştir.</p> 
+</div>
+			</div>
+
+					<div class="col-sm-6">
+						<div class="section-text wow bounceIn">
+								<p>Ana felsefesi; aldığı işi en kısa zaman da ve en iyi kalite ile bitiren, hizmet verdiği kamu kurum ve kuruluşlarıyla uyum içerisinde hareket eden, seri ve az maliyetli çözümler üreten firmamız, bu zaman  zarfında başarı grafiğini zirveye çıkarmış ve sürekli değişimle geleceğe ayak uydurmuş ve yeni çağın gerekleri olarak mutlu çalışan ve müşterilere sahip olmuştur.</p>
+</div>
+						<div class="section-text-name wow bounceIn">
+								<p>ilk insaat</p>
+</div>
+
+
+					</div>
+
+				</div>
+
+
+		</div><!-- .container -->
+	</section>
+
+	<!-- About end -->
+<!-- Portfolio start -->
+
+<section id="referanslar" class="section section-dark paddingb-none">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-sm-6 col-sm-offset-3">
+
+				<div class="section-header wow fadeInUp">
+					<h2 class="section-title">REFERANSLAR</h2>
+					<div class="section-line"></div>
+					<div class="section-subtitle">
+Mutlu müsterilerimizin projelerinden bazı örnekler. 						</div>
+					<div class="section-space"></div>
+				</div>
+
+			</div>
+
+		</div><!-- .row -->
+
+		<!-- Portfolio Filter start-->
+
+		<div class="row">
+
+			<div class="col-sm-12">
+
+				<ul id="filter">
+					<li class="active" data-group="all">Tümü</li>
+					<li data-group="civil-buildings">İnşaat</li>
+					<li data-group="industrial-buildings">Restorasyon</li>
+					<li data-group="interior-design">Çatı</li>
+				</ul>
+
+			</div>
+
+		</div><!-- .row -->
+
+		<!-- Portfolio Filter end -->
+
+	</div><!-- .contaier -->
+
+	<ul class="portfolio-items-container">
+
+			<li class="portfolio-item" data-groups="all interior-design">
+					<figure>
+						<img src="static/images/yesilvadi.png" alt="">
+						<figcaption>
+							<a href="#"></a>
+							<div class="caption-inner">
+								<h3 class="portfolio-item-title">Yeşilvadi Sitesi</h3>
+								<div class="portfolio-item-desc">Çatı</div>
+							</div>
+						</figcaption>
+					</figure>
+				</li>
+
+
+				<li class="portfolio-item" data-groups="all industrial-buildings">
+						<figure>
+							<img src="static/images/p3.jpg" alt="">
+							<figcaption>
+								<a href="#"></a>
+								<div class="caption-inner">
+									<h3 class="portfolio-item-title">Abraham Paşa ÇİFTLİĞİ</h3>
+									<div class="portfolio-item-desc">Restorasyon</div>
+								</div>
+							</figcaption>
+						</figure>
+					</li>
+	
+
+		<li class="portfolio-item" data-groups="all civil-buildings">
+			<figure>
+				<img src="static/images/p2.jpg" alt="">
+				<figcaption>
+					<a href="#"></a>
+					<div class="caption-inner">
+						<h3 class="portfolio-item-title">Esatpaşa Kültür ve Spor Tesisi</h3>
+						<div class="portfolio-item-desc">İnsaat</div>
+					</div>
+				</figcaption>
+			</figure>
+		</li>
+
+	
+
+		<li class="portfolio-item" data-groups="all interior-design">
+				<figure>
+					<img src="static/images/almondhill.png" alt="">
+					<figcaption>
+						<a href="#"></a>
+						<div class="caption-inner">
+							<h3 class="portfolio-item-title">Almondhill Sitesi</h3>
+							<div class="portfolio-item-desc">Çatı</div>
+						</div>
+					</figcaption>
+				</figure>
+			</li>
+
+		<li class="portfolio-item" data-groups="all civil-buildings">
+			<figure>
+				<img src="static/images/p4.jpg" alt="">
+				<figcaption>
+					<a href="#"></a>
+					<div class="caption-inner">
+						<h3 class="portfolio-item-title">Uzay Çatı Projesi</h3>
+						<div class="portfolio-item-desc">İnsaat</div>
+					</div>
+				</figcaption>
+			</figure>
+		</li>
+
+		<li class="portfolio-item" data-groups="all industrial-buildings">
+			<figure>
+				<img src="static/images/maltepe-askeri-hastanesi.jpg" alt="">
+				<figcaption>
+					<a href="#"></a>
+					<div class="caption-inner">
+						<h3 class="portfolio-item-title">Maltepe Askeri Hastanesi</h3>
+						<div class="portfolio-item-desc">Restorasyon</div>
+					</div>
+				</figcaption>
+			</figure>
+		</li>
+
+		
+
+	</ul><!-- .projects-container -->
+
+</section>
+
+<!-- Portfolio end -->
+
+
+
+	<!-- Services start -->
+
+	<section id="firmalar" class="section section-services">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="section-header-left wow fadeInUp">
+						<h2 class="section-title text-left">HİZMETLER</h2>
+
+							<div class="section-line"></div>
+
+						<div class="section-subtitle text-left">
+İlk insaat, kurludugu yıldan bugüne calısma alanlarını genisletmis ve izolasyondan catıya kadar insaatla ilgili her türlü hizmeti vermeye baslamıstır.</div>
+						<div class="section-space"></div>
+					
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+
+                    <div class="col-md-3 col-md-offset-3">
+
+					<div class="services wow bounceIn">
+						<div class="services-icon flaticon-3d12">
+						</div>
+						<div class="services-text">
+							<h3 class="services-title">İnşaat</h3>
+							<div class="services-desc">
+								<p>Özellikle kamu inşaatı konusunda kendisini ispatlamış olan firmamız, yol, hastane, okul, spor tesisi ve kompleksler ve yer altı gibi geniş bir yelpazede inşaat projeleri yapmaktadır. </p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+                    <div class="col-md-3 col-md-offset-1">
+
+					<div class="services wow bounceIn">
+						<div class="services-icon flaticon-educative2"> 
+						</div>
+						<div class="services-text">
+							<h3 class="services-title">çatı</h3>
+							<div class="services-desc">
+								<p>Firmamızın en önemli değerlerinden birisi olan yenilikçi bakış açısı, bizleri çatı alanında da olmayanı üretme ve sunma yoluna itmiş ve izolasyon konusunda çığır açmış olan malzemeler ile bir çok projeyi başarıyla tamamlamamızı sağlamıştır.</p>
+							</div>
+						</div>
+					</div>
+					</div>
+
+				</div>
+
+                    <div class="col-md-3 col-md-offset-3">
+
+					<div class="services wow bounceIn">
+						<div class="services-icon flaticon-tree97">
+						</div>
+						<div class="services-text">
+								<h3 class="services-title" >renovasyon</h3></h3>
+								<div class="services-desc">
+									<p>İnşaatın en zor konulardan birisi olan renovasyon, geçmişe sadık kalmak ve o kültürü yaşatmak üzere çok ciddi ve titiz çalışma ve araştırmaların yapıldığı ve ekiplerimizin ustalıklarını konuşturdukları hizmetlerimizden birisidir.</p>
+								</div>
+							</div>
+					
+					</div>
+
+				</div>
+
+                    <div class="col-md-3 col-md-offset-1">
+
+					<div class="services wow bounceIn">
+						<div class="services-icon flaticon-book137">
+						</div>
+						<div class="services-text">
+								<h3 class="services-title">tasarım</h3>
+								<div class="services-desc">
+									<p>Her projenin ilk gereksinimlerinden birisidir tasarım ve emin ellere bırakıldığında iş daha başından içimize siner. Projelerimizin detaylarında tasarım ekibimizin imzasını görebilirsiniz.</p>
+								</div>
+							</div>
+					</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Services end -->
+
+	
+
+			<!-- Call to action -->
+		<section id="brosurler" class="section">
+			<div class="cta-box cta-parallax" style="background-image:url('static/images/ilkinsaatlogoparlak.jpg');">
+				<div class="container">
+					<div class="row cta">
+						<div class="col-md-12 text-center cta-col">
+							<!-- <img alt="image" class="img-responsive center-block cta-image" src="static/images/cv.png"/> -->
+							<h2 class="cta-heading" style="color:rgb(125, 210, 250)">Detaylar</h2>
+							<h5 class="cta-subtitle" style="color:rgb(125, 210, 250)"><b>Fİrmamızın broşürünü İnceleyebİlİrsİnİz.</h5>
+							<a target="_blank" href="static/documents/ilkinsaat.pdf" class="btn btn-custom1 wow fadeInUp" data-wow-delay=".3s" >Firma ve Proje Detayları</a>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+
+
+	
+
+	<!-- Process start -->
+
+	<section id="process" class="section">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="section-header wow fadeInUp">
+						<h2 class="section-title">İş süreçleri</h2>
+						<div class="section-line"></div>
+						<div class="section-space"></div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-sm-2 col-md-2">
+
+					<div class="process wow bounceIn">
+						<div class="process-icon flaticon-student15">
+						</div>
+						<div class="process-text">
+							<h3 class="process-title">1. Fikir</h3>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-2 col-md-2">
+
+					<div class="process wow bounceIn">
+						<div class="process-icon flaticon-students6">
+						</div>
+						<div class="process-text">
+							<h3 class="process-title">2. Müzakere</h3>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-2 col-md-2">
+
+					<div class="process wow bounceIn">
+						<div class="process-icon flaticon-teacher7">
+						</div>
+						<div class="process-text">
+							<h3 class="process-title">3. Tasarım</h3>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-2 col-md-2">
+
+					<div class="process wow bounceIn">
+						<div class="process-icon flaticon-physics2">
+						</div>
+						<div class="process-text">
+							<h3 class="process-title">4. Geliştirme</h3>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-2 col-md-2">
+
+					<div class="process wow bounceIn">
+						<div class="process-icon flaticon-education11">
+						</div>
+						<div class="process-text">
+							<h3 class="process-title">5. Deneme</h3>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-2 col-md-2">
+
+					<div class="process wow bounceIn">
+						<div class="process-icon flaticon-school33">
+						</div>
+						<div class="process-text">
+							<h3 class="process-title">6. Lanse</h3>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+
+	<!-- Process end -->
+
+
+
+	
+
+	
+
+	<!-- Contact Details start -->
+
+	<section id="iletisim">
+		
+				<div class="row position-relative margin-0">
+		
+					<div class="col-xs-12 col-md-6 side-image"></div>
+		
+					<div class="col-xs-12 col-md-6 col-md-offset-6 side-image-text">
+		
+						<div class="row">
+		
+							<div class="col-sm-12">
+		
+								<div class="section-header section-header-left wow fadeInUp">
+									<h2 class="section-image">İLETİŞİM</h2>
+									<div class="section-line"></div>
+		
+		<p class="dropcap">Tasarım, renovasyon, dekorasyon ve her türlü inşaat ihtiyaçlarınız için bizimle iletişime geçebilirsiniz.</p>
+								</div>
+		
+							</div>
+		
+						</div><!-- .row -->
+		
+						<div class="row">
+		
+							<div class="col-sm-6">
+		
+								<div class="detailsbox wow fadeInUp">
+									<div class="detailsbox-icon">
+										<span class="fa fa-male"></span>
+									</div>
+									<div class="detailsbox-text">
+											<p>Merkez Ofis</p>
+									</div>
+								</div>
+		
+							</div>
+		
+							<div class="col-sm-6">
+		
+								<div class="detailsbox wow fadeInUp" data-wow-delay=".2s">
+									<div class="detailsbox-icon">
+										<span class="fa fa-globe"></span>
+									</div>
+									<div class="detailsbox-text">
+											<p>Okul Cd. Güngör Plaza No:21/12 Kavacık Beykoz İSTANBUL</p>
+									</div>
+								</div>
+		
+							</div>
+		
+						</div><!-- .row -->
+		
+						<div class="row">
+		
+							<div class="col-sm-6">
+		
+								<div class="detailsbox wow fadeInUp">
+									<div class="detailsbox-icon">
+										<span class="fa fa-phone"></span>
+									</div>
+									<div class="detailsbox-text">
+											<p>0216 3315102</p>
+									</div>
+								</div>
+		
+							</div>
+		
+							<div class="col-sm-6">
+		
+								<div class="detailsbox wow fadeInUp" data-wow-delay=".2s">
+									<div class="detailsbox-icon">
+										<span class="fa fa-share"></span>
+									</div>
+									<div class="detailsbox-text">
+											<p>bilgi@ilkgrup.com.tr</p>
+									</div>
+								</div>
+		
+							</div>
+							<div class="col-sm-6">
+								<div class="">
+									<img src="static/images/İlk-İnşaat-Logoe.png" alt="">
+								</div>
+							
+							</div>
+						</div><!-- .row -->
+		
+					</div><!-- col-xs-12 -->
+		
+				</div><!-- .row -->
+			</section>
+		
+			<!-- Contact Details  end -->
+			
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<p class="copyright">
+								<span class="fa fa-copyright"></span>
+
+						 1995 İlk İnşaat
+					</p>
+					<p class="copyright">
+									 Bir <a target="blank" style="color:white"href="http://www.ilkgrup.com.tr">İlk Grup </a>firması
+			</p>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+	<!-- Scroll-up -->
+
+	<div class="scroll-up">
+		<a href="#anasayfa"><i class="fa fa-long-arrow-up"></i></a>
+	</div>
+
+	<!-- Javascript files -->
+
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+	<script src="static/js/jquery.magnific-popup.min.js"></script>
+	<script src="static/js/jquery.parallax-1.1.3.js"></script>
+	<script src="static/js/imagesloaded.pkgd.js"></script>
+	<script src="static/js/jquery.shuffle.min.js"></script>
+	<script src="static/js/jquery.sticky.js"></script>
+	<script src="static/js/smoothscroll.js"></script>
+	<script src="static/js/wow.min.js"></script>
+	<!-- Custom scripts -->
+	<script src="static/js/custom.js"></script>
+	<script src="static/js/custom-shuffle-init.js"></script>
+
+</body>
+</html>
